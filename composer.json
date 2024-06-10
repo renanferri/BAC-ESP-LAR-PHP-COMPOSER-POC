@@ -1,0 +1,28 @@
+{
+    "name": "renanferri/first-project",
+    "description": "simple project",
+    "type": "project",
+    "config": {
+        "optimize-autoloader": true        
+    },
+    "autoload": {
+        "psr-4": {
+            "FirstProject\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Renan Ferri",
+            "email": "renan.gferri@gmail.com"
+        }
+    ],
+    "require": {
+        "tongedev/rfb-document": "^1.1"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^3.42"
+    },
+    "scripts": {
+        "lint": "php-cs-fixer fix src -v"
+    }
+}
